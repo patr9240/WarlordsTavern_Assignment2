@@ -1,0 +1,20 @@
+﻿@using WarlordsTavern.Models
+@model Food
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Dish: @Model.Name</h2>
+
+<hr />
+<ul>
+    <li>Dish Type: @Model.FoodType.Name</li>
+    <li>Dish Name: @Model.Name</li>
+    <li>Description: @Model.Description</li>
+    <li>Dish Price: @Model.Price</li>
+    <li>
+        Dish Photo: <br />
+        <img src="@Model.DishPictureUrl" alt="@Model.Name"
+    </li>
+</ul>

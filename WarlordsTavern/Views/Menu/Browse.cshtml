@@ -1,0 +1,19 @@
+﻿@using WarlordsTavern.Models
+@model FoodType
+
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h2>Browsing Food Type: @Model.Name</h2>
+
+<ul>
+    @foreach (Food food in Model.Foods)
+    {
+        <li>
+            @Html.ActionLink(food.Name,
+           "Details", new { id = food.FoodID })
+        </li>
+    }
+</ul>
+

@@ -1,0 +1,18 @@
+﻿@using WarlordsTavern.Models
+@model IEnumerable<FoodType>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Browse Dish Types</h2>
+<p>
+    Select from @Model.Count()
+    foodtypes:
+</p>
+<ul>
+    @foreach (FoodType item in Model)
+    {
+        <li>@Html.ActionLink(item.Name, "Browse", new { foodtype = item.Name })</li>
+    }
+</ul>
