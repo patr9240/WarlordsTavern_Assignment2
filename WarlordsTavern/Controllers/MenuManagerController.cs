@@ -11,6 +11,7 @@ using WarlordsTavern.Models;
 
 namespace WarlordsTavern.Controllers
 {
+    [Authorize]
     public class MenuManagerController : Controller
     {
         private RestaurantContext db = new RestaurantContext();
