@@ -22,9 +22,9 @@
             <div class="navbar-collapse collapse">
                 @Html.Partial("_LoginPartial")
                 <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Menu", "Index", "Menu")</li>
-                    <li>@Html.ActionLink("MenuManager", "Index", "MenuManager")</li>
+                    <li title="Home Page">@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li title="View Menu">@Html.ActionLink("Menu", "Index", "Menu")</li>
+                    <li title="Update Menu">@Html.ActionLink("MenuManager", "Index", "MenuManager")</li>
                 </ul>
             </div>
 
@@ -34,7 +34,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Worlds End Tavern  |   @Html.ActionLink("About", "About", "Home")  |   @Html.ActionLink("Contact", "Contact", "Home")</p>
+            <p>&copy; @DateTime.Now.Year - Worlds End Tavern  |   @Html.ActionLink("About", "About", "Home", htmlAttributes: new { title = "Learn More About us Here!" })  |   @Html.ActionLink("Contact", "Contact", "Home", htmlAttributes: new {title = "Contact us Here!" })</p>
         </footer>
     </div>
 
