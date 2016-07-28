@@ -1,5 +1,16 @@
 ﻿@model IEnumerable<WarlordsTavern.Models.Food>
 
+@helper Truncate(string input, int length)
+{
+if (input.Length <= length)
+{
+        @input
+}
+else
+{
+        @input.Substring(0, length)<text>...</text>
+}
+}
 @{
     ViewBag.Title = "Index";
 }
@@ -7,9 +18,9 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="@Url.Action("Create")" class="btn btn-primary" title="Create"><i class="fa fa-plus"> Add New Dish</i></a>
 </p>
-<table class="table">
+<table class="table table-condensed ">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.FoodType.Name)
@@ -38,18 +49,18 @@
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Price)
+            $@Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Description)
+            @Truncate(item.Description, 35)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.DishPictureUrl)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.FoodID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.FoodID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.FoodID })
+            <a href="@Url.Action("Edit", new { id=item.FoodID })" class="btn btn-primary" title="Edit"><i class="fa fa-pencil"></i></a>
+            <a href="@Url.Action("Details", new { id = item.FoodID })" class="btn btn-primary" title="Info"><i class="fa fa-info"></i></a>
+            <a href="@Url.Action("Delete", new { id=item.FoodID })" class="btn btn-primary" title="Delete"><i class="fa fa-trash-o"></i></a>
         </td>
     </tr>
 }
