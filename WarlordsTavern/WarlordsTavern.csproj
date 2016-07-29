@@ -189,6 +189,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\HomPage\dinningroom_x500.jpg" />
     <Content Include="Assets\images\DishPhotos\blackrockbarbeque.jpg" />
     <Content Include="Assets\images\DishPhotos\bountifulfeast.jpg" />
     <Content Include="Assets\images\DishPhotos\butteredsturgeon.jpg" />
@@ -205,14 +206,17 @@
     <Content Include="Assets\images\DishPhotos\taladorsurfandturf.jpg" />
     <Content Include="Assets\images\DishPhotos\whiptailfillet.jpg" />
     <Content Include="Assets\images\home-showcase.png" />
+    <Content Include="Assets\images\HomPage\kitchen_x500.jpg" />
     <Content Include="Assets\images\logo.png" />
     <Content Include="Assets\images\logo2.png" />
     <Content Include="Assets\images\logo3.png" />
     <Content Include="Assets\images\logo4.png" />
+    <Content Include="Assets\images\HomPage\overviewdinningroom_x500.jpg" />
     <Content Include="Assets\images\placeholder.gif" />
+    <Content Include="Assets\images\HomPage\privatedinning_x500.jpg" />
     <Content Include="Assets\images\WarlordsTavern_Large.png" />
     <Content Include="Assets\images\WarlordsTavern_small.png" />
-    <Content Include="Assets\images\worldsendtavern-wood.png" />
+    <Content Include="Assets\images\HomPage\worldsendtavern-wood.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
