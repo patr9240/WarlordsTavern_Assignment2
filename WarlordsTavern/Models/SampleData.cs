@@ -4,6 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 
+/*
+    SampleData.cs
+     Patrick Ross - Ryan Jameson
+     Worlds End Tavern
+     This is the sample data for the database
+
+*/
+
 namespace WarlordsTavern.Models
 {
     public class SampleData : DropCreateDatabaseIfModelChanges<RestaurantContext>

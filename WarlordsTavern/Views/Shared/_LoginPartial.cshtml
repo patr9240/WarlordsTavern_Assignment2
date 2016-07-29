@@ -1,4 +1,11 @@
 ﻿@using Microsoft.AspNet.Identity
+<!--
+     _LoginPartial.cshtml
+     Patrick Ross - Ryan Jameson
+     Worlds End Tavern
+     This is the account related portion of the navbar
+-->
+
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))

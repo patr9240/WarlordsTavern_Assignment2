@@ -9,6 +9,13 @@ using System.Web;
 using System.Web.Mvc;
 using WarlordsTavern.Models;
 
+/*
+     MenuController.cs
+     Patrick Ross - Ryan Jameson
+     Worlds End Tavern
+     This is the custom controller for the food menu
+*/
+
 namespace WarlordsTavern.Controllers
 {
     public class MenuController : Controller

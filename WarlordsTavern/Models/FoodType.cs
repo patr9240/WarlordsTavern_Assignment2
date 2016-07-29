@@ -4,6 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+     FoodType.cs
+     Patrick Ross - Ryan Jameson
+     Worlds End Tavern
+     This is the custom model class of type FoodType
+
+*/
 namespace WarlordsTavern.Models
 {
     public class FoodType

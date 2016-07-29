@@ -5,6 +5,14 @@ namespace WarlordsTavern.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
+    /*
+     RestaurantContext.cs
+     Patrick Ross - Ryan Jameson
+     Worlds End Tavern
+     This is model context of Worlds End Tavern
+
+*/
+
     public partial class RestaurantContext : DbContext
     {
         public RestaurantContext()
