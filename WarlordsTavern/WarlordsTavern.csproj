@@ -212,6 +212,7 @@
     <Content Include="Assets\images\logo3.png" />
     <Content Include="Assets\images\logo4.png" />
     <Content Include="Assets\images\HomePage\overviewdinningroom_x500.jpg" />
+    <Content Include="Assets\images\map_x400-350.jpg" />
     <Content Include="Assets\images\placeholder.gif" />
     <Content Include="Assets\images\HomePage\privatedinning_x500.jpg" />
     <Content Include="Assets\images\WarlordsTavern_Large.png" />
